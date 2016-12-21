@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quoting Dojo Quotes Page</title>
+</head>
+<body>
+	<h1>Here are the awesome quotes</h1>
+	<% quotes.forEach(function(quote){ %>
+	<h3><%= quote.content %></h3>
+	<h5><%= quote.name %>, at <%= quote._id.getTimestamp() %></h5>
+	<hr>
+	<% }) %> 
+	<a href="/">Main</a>
+</body>
+</html>
